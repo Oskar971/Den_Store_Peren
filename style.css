@@ -3,12 +3,14 @@
 }
 
 .h2 {
+  display: flex;
   font-style: normal;
   font-size: 22px;
   letter-spacing: 1px;
   text-transform: none;
   color: white;
   font-weight: normal;
+  text-align: center;
 }
 .body {
   background-color: rgb(35, 32, 32);
@@ -16,10 +18,17 @@
   width: auto;
 }
 
-.Vegg {
+.forside_bildet {
+  width: 300px;
+  transition: 0.3s;
 }
 
-#forside_bildet {
+.bildet:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 20px rgba(255, 215, 100, 0.5);
+}
+
+.forside_bildet {
   display: flex;
   flex-direction: row;
   height: 100%;
