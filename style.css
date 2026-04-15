@@ -1,5 +1,33 @@
-.pæra {
-  background-color: rgb(120, 114, 114);
+body {
+  width: min(100vw, calc(100vh * var(--aspect-ratio)));
+  height: min(100vh, calc(100vw / var(--aspect-ratio)));
+
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 30%)),
+    url("../Bilder/bg-tiling-dark.svg");
+  background-repeat: no-repeat, repeat;
+  background-size: cover, auto;
+  animation: scrollBackground 120s linear infinite;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200% 100%;
+  }
+}
+
+body {
+  height: 100%;
+  width: auto;
+  background-size: auto;
 }
 
 .infoForside {
@@ -7,37 +35,35 @@
   width: auto;
 }
 
-.h2 {
-  display: flex;
+.tekst {
   font-style: normal;
-  font-size: 50px;
+  font-size: 45px;
   letter-spacing: 1px;
   text-transform: none;
   color: white;
   font-weight: normal;
   text-align: center;
 }
-.body {
-  background-color: rgb(35, 32, 32);
-  height: 100%;
-  width: auto;
-}
+
 .knapp-wrapper {
+  position: relative;
   display: inline-block;
+  line-height: 0;
   border-radius: 50%;
+  transition: transform 0.3s ease;
   transition: 0.3s;
 }
 
 .forside_bildet {
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  padding: 10px;
 }
 
 .knapp-wrapper:hover {
-  box-shadow:
-    0 0 0 6px rgba(255, 215, 100, 0.5),
-    0 0 25px rgba(255, 215, 100, 0.4);
+  box-shadow: 0 0 25px rgba(255, 215, 100, 0.4);
+  transform: scale(1.1);
 }
