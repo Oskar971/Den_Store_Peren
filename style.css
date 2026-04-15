@@ -5,3 +5,9 @@
 .body {
   background-color: rgb(35, 32, 32);
 }
+
+.Vegg {
+  background-color: black;
+  height: 100%;
+  width: auto;
+}
