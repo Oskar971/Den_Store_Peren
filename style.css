@@ -2,12 +2,27 @@
   background-color: rgb(120, 114, 114);
 }
 
+.h2 {
+  font-style: normal;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: white;
+  font-weight: normal;
+}
 .body {
   background-color: rgb(35, 32, 32);
+  height: 100%;
+  width: auto;
 }
 
 .Vegg {
-  background-color: black;
+}
+
+#forside_bildet {
+  display: flex;
+  flex-direction: row;
   height: 100%;
   width: auto;
+  padding: 20px;
 }
