@@ -45,6 +45,16 @@ body {
   text-align: center;
 }
 
+.infoForside {
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
 .knapp-wrapper {
   position: relative;
   display: inline-block;
@@ -79,6 +89,25 @@ body {
   color: brown;
 }
 
+.bildeKort {
+  height: 50%;
+  width: auto;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.infoTekst {
+  font-style: normal;
+  font-size: 25px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: white;
+  font-weight: normal;
+  text-align: center;
+}
+
 .kort {
   background-color: #021c40;
   border: 5px solid #2c3f6c;
@@ -90,4 +119,30 @@ body {
   transition: transform 0.2s ease;
   height: auto;
   margin: 20px;
+}
+
+#toggleProsjekter {
+  background: transparent;
+  height: 100%;
+  width: auto;
+  color: #fff;
+  border-radius: 12px;
+  padding: 15px 15px;
+  margin: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#toggleProsjekter:hover {
+  background: linear-gradient(135deg, #032452, #031b3d);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#toggleProsjekter:active {
+  transform: translateY(0);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
