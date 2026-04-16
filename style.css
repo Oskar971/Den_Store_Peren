@@ -63,6 +63,13 @@ body {
   display: block;
 }
 
+.knapp-wrapper button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  outline: none;
+}
+
 .knapp-wrapper:hover {
   box-shadow: 0 0 25px rgba(255, 215, 100, 0.4);
   transform: scale(1.1);
@@ -70,4 +77,17 @@ body {
 
 .testKnapp {
   color: brown;
+}
+
+.kort {
+  background-color: #021c40;
+  border: 5px solid #2c3f6c;
+  border-radius: 10px;
+  padding: 20px;
+  /* width: 200px; */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  height: auto;
+  margin: 20px;
 }

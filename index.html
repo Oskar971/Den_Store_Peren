@@ -11,15 +11,15 @@
  <div id="side1"> </div>
     <div class="infoForside"><h2 class="tekst">Den mystiske øy</h2></div>
     <div><p class="tekst">Klikk kanppen for å starte</p></div>
-    <button class="testKnapp" onclick="byttSide('side2')">Gå til side 2</button>
-
-    <div class="knapp-wrapper">
-      <img class="forside_bildet" src="bilder/StartKnapp.png" alt="feil" />
-    </div>
+    
+     <div class="knapp-wrapper">
+      <button onclick="byttSide('side2')"><img class="forside_bildet" src="bilder/StartKnapp.png" alt="feil" /></button>
+     </div>
  </div>
 
  <div id="side2" style="display: none;">
     <h1>Dette er side 2</h1>
+    <img class="kort" src="bilder/Ananas.png" alt="">
     <button class="testKnapp" onclick="byttSide('side1')">Tilbake til side 1</button>
 </div>
   </body>
