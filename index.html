@@ -8,23 +8,42 @@
     <title>Document</title>
   </head>
   <body>
- <div id="side1"> </div>
-    <div class="infoForside"><h2 class="tekst">Den mystiske øy</h2></div>
-    <div><p class="tekst">Klikk kanppen for å starte</p></div>
-    
-     <div class="knapp-wrapper">
-      <button onclick="byttSide('side2')"><img class="forside_bildet" src="bilder/StartKnapp.png" alt="feil" /></button>
-     </div>
- </div>
+    <div id="side1">
+      <div class="infoForside"><h2 class="tekst">Den mystiske øy</h2></div>
+      <div><p class="tekst">Klikk kanppen for å starte</p></div>
 
- <div id="side2" style="display: none;">
-
-    <div class="kort">
-        <img class="bildeKort" src="bilder/Pære frø.png" alt="feil">
-         <button class="testKnapp" onclick="byttSide('side1')">Tilbake til side 1</button>
-         <p class="infoTekst">Sebastian og Mitcho er hjemme med det mystiske frøet og vurder hva de skal gjøre med det.</p>
+      <div class="knapp-wrapper">
+        <button onclick="byttSide('side2')">
+          <img class="forside_bildet" src="bilder/StartKnapp.png" alt="feil" />
+        </button>
+      </div>
     </div>
-    
-</div>
+
+    <div id="side2" style="display: none">
+      <div class="kort">
+        <img class="bildeKort" src="bilder/Pære frø.png" alt="feil" />
+        <p class="infoTekst">
+          Sebastian og Mitcho er hjemme med det mystiske frøet og vurder hva de
+          skal gjøre med det.
+        </p>
+      </div>
+      <div class="SvarAlternativ">
+        <button id="toggleProsjekter" onclick="byttSide('side3')">Test</button>
+      </div>
+    </div>
+
+    <div id="side3" style="display: none">
+      <img src="bilder/Ananas.png" alt="feil" />
+      <button id="toggleProsjekter" onclick="byttSide('side4')">
+        Er du sikker på dette ?
+      </button>
+    </div>
+
+    <div id="side4" style="display: none">
+      <img src="bilder/Ananas.png" alt="feil" />
+      <button id="toggleProsjekter" onclick="byttSide('side4')">
+        Er du sikker på dette ?
+      </button>
+    </div>
   </body>
 </html>
