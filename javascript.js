@@ -13,7 +13,7 @@ function byttSide(nesteSideId) {
   //   document.getElementById("side11").style.display = "none";
 
   // Stians måte
-  for (i = 1; i <= 12; i++) {
+  for (i = 1; i <= 16; i++) {
     document.getElementById("side" + i).style.display = "none";
   }
 
