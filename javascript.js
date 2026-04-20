@@ -1,12 +1,13 @@
 function byttSide(nesteSideId) {
-  // Skjul begge sidene først
+  // Skjuler sidene først
   document.getElementById("side1").style.display = "none";
   document.getElementById("side2").style.display = "none";
   document.getElementById("side3").style.display = "none";
   document.getElementById("side4").style.display = "none";
   document.getElementById("side5").style.display = "none";
   document.getElementById("side6").style.display = "none";
+  document.getElementById("side7").style.display = "none";
 
-  // Vis siden brukeren valgte
+  // Viser vilken side som er valgt
   document.getElementById(nesteSideId).style.display = "block";
 }
