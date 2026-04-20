@@ -7,6 +7,9 @@ function byttSide(nesteSideId) {
   document.getElementById("side5").style.display = "none";
   document.getElementById("side6").style.display = "none";
   document.getElementById("side7").style.display = "none";
+  document.getElementById("side8").style.display = "none";
+  document.getElementById("side9").style.display = "none";
+  document.getElementById("side10").style.display = "none";
 
   // Viser vilken side som er valgt
   document.getElementById(nesteSideId).style.display = "block";
