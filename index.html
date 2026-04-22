@@ -5,12 +5,12 @@
     <script src="javascript.js" defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Interaktiv historie</title>
   </head>
   <body>
     <div id="side1">
-      <div class="infoForside"><h2 class="tekstWOW">Den mystiske øy</h2></div>
-      <div><p class="tekstWOW">Klikk kanppen for å starte</p></div>
+      <div class="infoForside"><h2 class="tekstWOW">Mysteria øya</h2></div>
+      <div><p class="tekstWOW">Klikk for å starte</p></div>
 
       <div class="knapp-wrapper">
         <button onclick="byttSide('side2')">
@@ -21,17 +21,19 @@
 
     <div id="side2" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Pære frø.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Pære frø.png" alt="feil" />
+        </div>
         <p class="infoTekst">
-          Sebastian og Mitcho er hjemme, med det mystiske frøet og vurder hva de
-          skal gjøre med det.
+          Sebastian og Mitcho har funnet et mystiske frø. Fra fiske turen deres
+          og vurderer hva de skal gjøre med det.
         </p>
         <div class="SvarAlternativ">
           <button id="toggleProsjekter" onclick="byttSide('side3')">
-            Plante frøet
+            Plante frøet.
           </button>
           <button id="toggleProsjekter" onclick="byttSide('side10')">
-            ikke plante frøet
+            ikke plante det.
           </button>
         </div>
       </div>
@@ -39,10 +41,12 @@
 
     <div id="side10" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du Tapte 2.0.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du Tapte 2.0.png" alt="feil" />
+        </div>
         <p class="tekst">
-          Historien slutter. de forsetter å ha en vanlig dag. OG kvits forsetter
-          og bestemmer.
+          Historien slutter. De fortsetter å ha en vanlig hverdag, og Kvist
+          fortsetter å bestemme.
         </p>
         <button id="toggleProsjekter" onclick="byttSide('side1')">
           Prøv igjen !
@@ -52,66 +56,75 @@
 
     <div id="side3" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/Ødelakt hus .jpeg"
-          alt="feil"
-        />
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/Ødelakt hus .jpeg"
+            alt="feil"
+          />
+        </div>
         <p class="tekst">
-          Kvist er sur og sier at de må fjerne pæren med en gang. Hva skal de
-          gjøre med ananasen?
+          Kvist er sur etter å ha sett pæren og sier at de må fjerne den med en
+          gang, siden de ikke har fått tillatelse til å ha en så stor pære i
+          bakgården. Hva skal de gjøre med pæren?
         </p>
         <button id="toggleProsjekter" onclick="byttSide('side4')">
-          ringe Forskere for å se på ananasen.
+          Ringe Forskere for å se på Pæra.
         </button>
         <button id="toggleProsjekter" onclick="byttSide('side5')">
-          ødelegg ananas fordi den ødela huset
+          Bare bli ferdig med det å ødelegg pæra.
         </button>
       </div>
     </div>
 
     <div id="side4" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        </div>
         <p class="tekst">
-          Forskerne ser på ananas sier det er en helt vanlig pære bare veldig
-          stor. så for å kunne flytte den må vi fjerna alt innholdet
+          Forskerne ser på pæren og sier at det er en helt vanlig pære, bare
+          veldig stor. For å kunne flytte den må de fjerne alt innholdet først.
+          For som den er nå, veier den alt for mye.
         </p>
         <button id="toggleProsjekter" onclick="byttSide('side7')">
-          kaste alt i søppel dynga
+          Kaste alt på søppel dynga
         </button>
 
         <button id="toggleProsjekter" onclick="byttSide('side6')">
-          Lage is og kaker av ananasen, og gi det bort gratis. Til folkene i
-          byen.
+          Lage Brus og kaker av pæren, og gi det bort gratis.
         </button>
       </div>
     </div>
 
     <div id="side5" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        </div>
         <p class="tekst">
-          De må ta noen valg og det fort for de det skal regne og det kan
-          ødelegge all tingende de har
+          De må ta noen valg, og det fort, for det skal regne, og det kan
+          ødelegge alt de har.
         </p>
         <button id="toggleProsjekter" onclick="byttSide('side6')">
-          Ringe forskerne for hjelp sånn at de kan bygge et sted for dem å bo.
+          Ringe forskerne for hjelp.
         </button>
         <button id="toggleProsjekter" onclick="byttSide('side8')">
-          Ikke gjøre noe å la all tingene bli ødelagt.
+          Ikke gjøre noe, å la all tingene bli ødelagt.
         </button>
       </div>
     </div>
 
     <div id="side6" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/pære saft versjon 4_.png"
-          alt="feil"
-        />
-        <p class="tekst">Alle er glade og dere er klare til å fjerne ananas</p>
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/pære saft versjon 4_.png"
+            alt="feil"
+          />
+        </div>
+        <p class="tekst">Alle er glade, og dere er klare til å fjerne pæren.</p>
         <button id="toggleProsjekter" onclick="byttSide('side7')">
           Forsett
         </button>
@@ -120,11 +133,13 @@
 
     <div id="side7" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/Kvist sparker pæra:ananas.jpg"
-          alt="feil"
-        />
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/Kvist sparker pæra:ananas.jpg"
+            alt="feil"
+          />
+        </div>
         <p class="tekst">
           Kvist har blir så sur av at de har fått så mye oppmerksom het så han
           sparker pære så den begynner å trille nedover
@@ -137,7 +152,9 @@
 
     <div id="side8" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        </div>
         <p class="tekst">
           Siden alt ble ødelagt har de ingen spor til å finne JB så de gir opp.
         </p>
@@ -149,7 +166,9 @@
 
     <div id="side9" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        </div>
         <p class="tekst">
           ananas triller fort mot havet, men siden dere gjorde alle innbyggerne
           sure. Gidder de ikke å prøve å stoppe den. Hvis dette ikke er deg så
@@ -166,7 +185,9 @@
 
     <div id="side11" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        </div>
         <p class="tekst">
           Siden alle er så sure på dere får kvis låv til å skyte dere ned og JB
           blir aldri funnet. kvist forsetter å ødlegge byen sakte men sikkert og
@@ -180,11 +201,13 @@
 
     <div id="side12" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
-          alt="feil"
-        />
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
+            alt="feil"
+          />
+        </div>
         <p class="tekst">
           ananas begynner å flyte fort mot havet. skal dere hopp hut og prøve å
           svømme til bake? eller forsette ?
@@ -201,7 +224,9 @@
 
     <div id="side13" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        </div>
         <p class="tekst">Dere havner i have og drukner. Slutt.....</p>
         <button id="toggleProsjekter" onclick="byttSide('side1')">
           Prøv igjen !
@@ -211,7 +236,9 @@
 
     <div id="side14" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        </div>
         <p class="tekst">
           Dere finner ut at dere trenger batterier til kompasset som viser veien
           til til øyen ? have skal dere gjøre. Og dere ser en stor kasse med
@@ -228,7 +255,9 @@
 
     <div id="side16" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Du tapte.png" alt="feil" />
+        </div>
         <p class="tekst">
           Dere møter på piratene og de skyter dere ned så dere drukner. Siden
           dere ikke hadde noe mat å gi dem.
@@ -241,6 +270,7 @@
 
     <div id="side15" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img
           class="bildeKort"
           src="bilder/Mappe_bilder_2/Piratende .jpg"
@@ -258,6 +288,7 @@
 
     <div id="side17" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img
           class="bildeKort"
           src="bilder/Mappe_bilder_2/sjø drage.png"
@@ -278,6 +309,7 @@
 
     <div id="side18" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img
           class="bildeKort"
           src="bilder/Mappe_bilder_2/Storm.png"
@@ -298,6 +330,7 @@
 
     <div id="side19" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img
           class="bildeKort"
           src="bilder/Mappe_bilder_2/Storm.png"
@@ -318,6 +351,7 @@
 
     <div id="side20" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img
           class="bildeKort"
           src="bilder/Mappe_bilder_2/Storm.png"
@@ -337,6 +371,7 @@
 
     <div id="side21" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
         <p class="tekst">
           Dere bruker veldig lang tid og ekstra ressurser, men dere kommer frem.
@@ -349,6 +384,7 @@
 
     <div id="side22" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
         <p class="tekst">
           Dere bruker veldig lang tid og ekstra ressurser, men dere kommer frem.
@@ -361,6 +397,7 @@
 
     <div id="side23" style="display: none">
       <div class="kort">
+        <div class="bildediv"></div>
         <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
         <p class="tekst">
           Dere finner øya, og dere får en visning av JB. Dere ser på alt det
@@ -378,7 +415,9 @@
 
     <div id="side24" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="bilder/Pæra på havet .jpg" alt="feil" />
+        </div>
         <p class="tekst">
           Dere kommer frem til øya og får en kort visning av JB. Han sier at
           hvis dere fikser kontrolltårnet, kan øya kjøre dem hjem.
@@ -391,11 +430,13 @@
 
     <div id="side25" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
-          alt="feil"
-        />
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
+            alt="feil"
+          />
+        </div>
         <p class="tekst">
           Dere får fikset tårnet, og dere har fått motoren til å fungere. Dere
           begynner å kjøre raskt hjem for å stoppe Kvist.
@@ -408,11 +449,13 @@
 
     <div id="side26" style="display: none">
       <div class="kort">
-        <img
-          class="bildeKort"
-          src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
-          alt="feil"
-        />
+        <div class="bildediv">
+          <img
+            class="bildeKort"
+            src="bilder/Mappe_bilder_2/Pæra:ananasen flyter mot havet .jpg"
+            alt="feil"
+          />
+        </div>
         <p class="tekst">
           Uten professoren har dere ikke mulighet til å fikse det, så dere må ta
           ananasbåten hjem og forlate øya. Siden du valgte å ikke fikse
@@ -426,7 +469,9 @@
 
     <div id="side27" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="..." alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="..." alt="feil" />
+        </div>
         <p class="tekst">
           Alle i byen venter på dere og roper «hurra» når dere seiler inn i
           havnen. Blir dere sett på som helter, og JB blir ordfører igjen. Med
@@ -441,7 +486,9 @@
 
     <div id="side28" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="..." alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="..." alt="feil" />
+        </div>
         <p class="tekst">
           Dere bruker så lang tid at når dere først kommer hjem, er det for
           sent. Kvist har helt tatt over, og ingen husker hvem JB er. Derfor må
@@ -455,7 +502,9 @@
 
     <div id="side29" style="display: none">
       <div class="kort">
-        <img class="bildeKort" src="..." alt="feil" />
+        <div class="bildediv">
+          <img class="bildeKort" src="..." alt="feil" />
+        </div>
         <p class="tekst">Vil du prøve Historien på nytt?</p>
         <button id="toggleProsjekter" onclick="byttSide('side1')">Start</button>
       </div>

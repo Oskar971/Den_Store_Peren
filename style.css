@@ -100,14 +100,14 @@ body {
   transform: scale(1.1);
 }
 
-.testKnapp {
-  color: brown;
+.bildediv {
+  height: 60vh;
 }
 
 .bildeKort {
-  height: 50%;
-  aspect-ratio: 16 / 9; 
-  object-fit: cover
+  height: 100%;
+  /* aspect-ratio: 5 / 3; */
+  object-fit: cover;
   overflow: hidden;
   border-radius: 2rem;
   padding: 2rem;
@@ -128,11 +128,11 @@ body {
   border: 5px solid #2c3f6c;
   border-radius: 10px;
   padding: 20px;
-  /* width: 200px; */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
-  height: auto;
+  height: 100%;
+  width: auto;
   margin: 20px;
 }
 
