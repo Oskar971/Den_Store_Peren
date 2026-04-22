@@ -103,7 +103,13 @@ body {
   font-size: 25px;
   letter-spacing: 1px;
   text-transform: none;
-  color: white;
+  color: #fff8cc;
+  text-shadow:
+    0 0 5px #fff8cc,
+    0 0 10px #fff1a8,
+    0 0 20px #ffcc00,
+    0 0 40px #ff9900,
+    0 0 80px #ff6600;
   font-weight: normal;
   text-align: center;
 }
