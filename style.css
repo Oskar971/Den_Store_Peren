@@ -27,7 +27,13 @@ body {
 body {
   height: 100%;
   width: auto;
-  background-size: auto;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
 
 .infoForside {
@@ -121,6 +127,10 @@ body {
   color: #fff8cc;
   font-weight: normal;
   text-align: center;
+}
+
+.svartalternativ {
+  padding-left: 20px;
 }
 
 .kort {
